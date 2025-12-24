@@ -6,11 +6,11 @@ import {
   FaReact,
   FaNodeJs,
   FaGitAlt,
+  FaCode,
 } from "react-icons/fa";
 import {
   SiMongodb,
   SiExpress,
-  SiSass,
   SiNpm,
   SiPostman,
 } from "react-icons/si";
@@ -18,7 +18,7 @@ import {
 const skills = [
   { name: "HTML", icon: <FaHtml5 /> },
   { name: "CSS", icon: <FaCss3Alt /> },
-  { name: "SASS", icon: <SiSass /> },
+  { name: "C", icon: <FaCode /> },
   { name: "JavaScript", icon: <FaJs /> },
   { name: "React", icon: <FaReact /> },
   { name: "Node.js", icon: <FaNodeJs /> },
@@ -38,7 +38,7 @@ export default function Skills() {
                  bg-gradient-to-b from-[#190019] via-[#2B124C] to-[#190019]
                  text-[#FBE4D8]"
     >
-      {/* Top merge fade */}
+      {/* Top fade */}
       <div
         className="absolute top-0 left-0 w-full h-24
                    bg-gradient-to-b from-[#190019] to-transparent"
@@ -73,7 +73,6 @@ export default function Skills() {
               gap-3
               cursor-pointer
               shadow-md
-
               transition-all duration-300 ease-out
               hover:-translate-y-3
               hover:shadow-[0_0_30px_#854F6C]
